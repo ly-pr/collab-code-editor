@@ -1,0 +1,83 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  
+  }
+  
+  .wrapper {
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    background: url('../../../assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover
+  }
+  input {
+    padding: 15px;
+    margin: 1px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 90%; /* Make input fields take the full width */
+  }
+  
+  label {
+    font-size: 12px;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+  
+  span {
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+    align-self: flex-start;
+  }
+  
+  input:invalid[focused="true"] {
+    border: 1px solid red;
+  }
+  
+  input:invalid[focused="true"] ~ span {
+    display: block;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .signup-link {
+    font-size: 12px;
+    color: whitesmoke;
+  }
+  
+   .signup-link a {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #cddbea;
+  }
+  
